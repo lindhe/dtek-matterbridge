@@ -1,0 +1,35 @@
+[irc.dtek]
+Server="irc.dtek.se:6697"
+RemoteNickFormat="<tg-{NICK}> "
+UseTLS=true
+Nick="telegrambot"
+Password="<my_nickserv_password>"
+
+[telegram.dtek]
+Token="<my_telegram_bot_token>"
+RemoteNickFormat="&lt;{NICK}&gt; "
+MessageFormat="HTMLNick"
+
+[[gateway]]
+name="dhack"
+enable=true
+
+[[gateway.inout]]
+account="irc.dtek"
+channel="#dhack"
+
+[[gateway.inout]]
+account="telegram.dtek"
+channel="<negative_int_telegram_group_id>"
+
+[[gateway]]
+name="dtek"
+enable=true
+
+[[gateway.inout]]
+account="irc.dtek"
+channel="#dtek"
+
+[[gateway.inout]]
+account="telegram.dtek"
+channel="<negative_int_telegram_group_id>"
