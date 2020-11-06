@@ -4,6 +4,7 @@ RemoteNickFormat="<tg-{NICK}> "
 UseTLS=true
 Nick="telegrambot"
 Password="<my_nickserv_password>"
+Charset="utf-8"
 
 [telegram.dtek]
 Token="<my_telegram_bot_token>"
